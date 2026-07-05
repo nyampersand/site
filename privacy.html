@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>プライバシーポリシー — nyampersand</title>
+<!-- Google Analytics 4 is loaded only after Cookie consent — see the consent script before </body> -->
+<meta name="description" content="nyampersand（ニャンパサンド）のプライバシーポリシー。アクセス解析・Cookie・お問い合わせ情報の取り扱いについて。">
+<link rel="canonical" href="https://nyampersand.com/privacy.html">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='48 28 156 172'%3E%3Cpath d='M 150 126 C 150 98, 136 76, 114 72 C 115 62, 117 51, 118 47 C 119 52, 111 63, 103 70 C 96 63, 89 52, 89 47 C 89 51, 87 62, 86 74 C 68 82, 66 104, 82 116 C 96 126, 120 122, 124 104 C 128 86, 90 94, 84 132 C 76 162, 98 184, 124 178 C 148 172, 150 148, 138 136 C 152 150, 176 156, 190 138' fill='none' stroke='%231b1a17' stroke-width='11' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#f5f3ee; --card:#ffffff; --ink:#1b1a17; --sub:#8c877c; --hair:#e6e2d8;
+    --marigold:#f0a22e; --plum:#7a4a63; --teal:#2c7a70;
+    --sans:"Inter",ui-sans-serif,"Noto Sans CJK JP",system-ui,-apple-system,sans-serif;
+    --mono:"JetBrains Mono",ui-monospace,"DejaVu Sans Mono","Noto Sans Mono CJK JP",monospace;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--paper);color:var(--ink);font-family:var(--sans);
+       line-height:1.8;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+  .wrap{max-width:760px;margin:0 auto;padding:0 24px}
+  a{color:inherit}
+  a:focus-visible{outline:2px solid var(--marigold);outline-offset:3px;border-radius:6px}
+
+  header{padding:26px 0}
+  .bar{display:flex;align-items:center;gap:12px}
+  .bar a.home{display:flex;align-items:center;gap:12px;text-decoration:none}
+  .bar .mk{width:34px;height:38px;color:var(--ink);flex:0 0 auto}
+  .bar .wm{font-family:var(--mono);font-weight:700;font-size:17px;letter-spacing:-.01em}
+  .bar .right{margin-left:auto;font-family:var(--mono);font-size:12px;color:var(--sub);letter-spacing:.02em}
+
+  .legal{padding:46px 0 0;max-width:680px}
+  .legal h1{font-size:clamp(26px,4.6vw,38px);font-weight:700;letter-spacing:-.02em;line-height:1.2}
+  .legal .meta{font-family:var(--mono);font-size:12px;color:var(--sub);margin-top:12px;letter-spacing:.02em}
+  .legal .lead{margin-top:26px;color:#4b4842;font-size:15.5px}
+  .legal h2{font-size:16px;font-weight:600;margin:40px 0 0;padding-bottom:10px;border-bottom:1px solid var(--hair);
+            display:flex;align-items:baseline;gap:12px}
+  .legal h2 .n{font-family:var(--mono);font-size:12px;color:var(--marigold);font-weight:700}
+  .legal p{color:#4b4842;font-size:15px;margin-top:16px}
+  .legal ul{margin-top:14px;padding-left:1.25em;color:#4b4842;font-size:15px}
+  .legal li{margin-top:9px}
+  .legal li b{font-weight:600;color:var(--ink)}
+  .legal a.link{color:var(--ink);text-decoration:underline;text-underline-offset:2px;text-decoration-color:var(--hair)}
+  .legal a.link:hover{text-decoration-color:var(--marigold)}
+  .legal .dl{margin-top:16px;font-size:15px;color:#4b4842}
+  .legal .dl div{display:flex;gap:14px;margin-top:8px;flex-wrap:wrap}
+  .legal .dl dt{font-family:var(--mono);font-size:12.5px;color:var(--sub);min-width:104px;flex:0 0 auto}
+  .legal .dl dd{color:var(--ink)}
+
+  footer{border-top:1px solid var(--hair);margin-top:64px;padding:30px 0 46px}
+  .foot{display:flex;align-items:center;gap:13px;flex-wrap:wrap}
+  .foot .mk{width:26px;height:29px;color:var(--ink)}
+  .foot .made{font-family:var(--mono);font-size:13px}
+  .foot .sp{flex:1}
+  .foot .lnk{font-family:var(--mono);font-size:12px;color:var(--sub);text-decoration:none}
+  .foot .lnk:hover{color:var(--ink)}
+  .foot .mail{font-family:var(--mono);font-size:13px;color:var(--sub);text-decoration:none}
+  .foot .mail:hover{color:var(--ink)}
+  .foot .cc{font-family:var(--mono);font-size:11.5px;color:var(--sub)}
+
+  /* cookie consent (opt-in: GA loads only after 同意) */
+  .consent{position:fixed;left:0;right:0;bottom:0;z-index:50;background:var(--card);
+           border-top:1px solid var(--hair);padding:16px 24px;box-shadow:0 -6px 24px rgba(27,26,23,.06)}
+  .consent[hidden]{display:none}
+  .consent .inner{max-width:760px;margin:0 auto;display:flex;align-items:center;gap:14px 20px;flex-wrap:wrap}
+  .consent p{flex:1;min-width:240px;font-size:13px;line-height:1.6;color:#4b4842}
+  .consent p a{color:var(--ink);text-decoration:underline;text-underline-offset:2px;text-decoration-color:var(--hair)}
+  .consent p a:hover{text-decoration-color:var(--marigold)}
+  .consent .btns{display:flex;gap:10px;flex-wrap:wrap}
+  .consent button{font-family:var(--mono);font-size:13px;padding:9px 18px;border-radius:999px;cursor:pointer;
+                  border:1px solid var(--hair);background:transparent;color:var(--ink);transition:opacity .15s ease}
+  .consent button.accept{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+  .consent button:hover{opacity:.85}
+
+  @media(max-width:640px){ .bar .right{display:none} }
+  @media(prefers-reduced-motion:reduce){ .consent button{transition:none} }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="bar">
+      <a class="home" href="/" aria-label="nyampersand ホーム">
+        <span class="mk" aria-hidden="true"><svg viewBox="48 28 156 172"><path d="M 150 126 C 150 98, 136 76, 114 72 C 115 62, 117 51, 118 47 C 119 52, 111 63, 103 70 C 96 63, 89 52, 89 47 C 89 51, 87 62, 86 74 C 68 82, 66 104, 82 116 C 96 126, 120 122, 124 104 C 128 86, 90 94, 84 132 C 76 162, 98 184, 124 178 C 148 172, 150 148, 138 136 C 152 150, 176 156, 190 138" fill="none" stroke="currentColor" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <span class="wm">nyampersand</span>
+      </a>
+      <span class="right">つなぐ、ときどき猫</span>
+    </div>
+  </header>
+
+  <main class="legal">
+    <h1>プライバシーポリシー</h1>
+    <p class="meta">最終改定日: 2026年7月5日</p>
+
+    <p class="lead">
+      nyampersand（ニャンパサンド／以下「当サイト」）は、ウェブサイト <b>nyampersand.com</b> における
+      利用者の情報の取り扱いについて、以下のとおり定めます。
+    </p>
+
+    <h2><span class="n">01</span> 運営者</h2>
+    <dl class="dl">
+      <div><dt>名称</dt><dd>nyampersand（ニャンパサンド）</dd></div>
+      <div><dt>連絡先</dt><dd><a class="link" href="#" data-u="hello" data-d="nyampersand.com" data-show>hello（アット）nyampersand.com</a></dd></div>
+    </dl>
+
+    <h2><span class="n">02</span> 取得する情報</h2>
+    <p>当サイトは、次の情報を取得することがあります。</p>
+    <ul>
+      <li><b>アクセス情報</b> — 閲覧ページ、参照元、IPアドレス、ブラウザ・OS・端末の種類、滞在時間など。Google Analytics（下記04）が Cookie を用いて自動的に収集します。</li>
+      <li><b>お問い合わせ情報</b> — メールでご連絡いただいた場合の、メールアドレス・お名前・本文の内容。</li>
+    </ul>
+    <p>現在、当サイトには入力フォーム・会員登録・商品販売はありません。上記以外の個人情報を能動的に収集することはありません。</p>
+
+    <h2><span class="n">03</span> 利用目的</h2>
+    <ul>
+      <li>サイトの利用状況の把握と、内容・使いやすさの改善のため。</li>
+      <li>お問い合わせへの回答・連絡のため。</li>
+    </ul>
+
+    <h2><span class="n">04</span> Cookie とアクセス解析</h2>
+    <p>
+      当サイトは、利用状況を把握するために Google LLC が提供する <b>Google Analytics 4</b> を利用しています。
+      Google Analytics は Cookie を通じてアクセス情報を収集しますが、これらは匿名で収集されており、個人を特定するものではありません。
+    </p>
+    <p>当サイトでは初回アクセス時に同意バナーを表示し、<b>あなたが「同意する」を選ぶまで Google Analytics を読み込みません</b>。
+      同意の有無は、ページ下部の「Cookie設定」からいつでも変更・撤回できます。</p>
+    <p>収集されたデータは Google のプライバシーポリシーに基づいて管理されます。Google によるデータの取り扱いについては、
+      <a class="link" href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">Google のポリシーと規約</a>
+      をご確認ください。</p>
+    <p>Cookie の利用は、ブラウザの設定で無効にできます。また、Google Analytics による計測を停止したい場合は、
+      <a class="link" href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener">Google アナリティクス オプトアウト アドオン</a>
+      をご利用いただけます。</p>
+
+    <h2><span class="n">05</span> 利用している外部サービス</h2>
+    <ul>
+      <li><b>Google Analytics</b>（アクセス解析）— Google LLC</li>
+      <li><b>Google Fonts</b>（フォント配信）— 表示のため、利用者の IP アドレス等が Google に送信される場合があります。</li>
+      <li><b>GitHub Pages</b>（ホスティング）— GitHub, Inc. サイトへのアクセスに伴い、通信ログが記録される場合があります。</li>
+    </ul>
+
+    <h2><span class="n">06</span> 第三者への提供</h2>
+    <p>当サイトは、法令に基づく場合を除き、ご本人の同意なく個人情報を第三者に提供することはありません。</p>
+
+    <h2><span class="n">07</span> 安全管理</h2>
+    <p>取得した情報は適切に管理し、漏えい・滅失・毀損の防止に努めます。</p>
+
+    <h2><span class="n">08</span> 開示・訂正・削除等の請求</h2>
+    <p>ご自身の情報の開示・訂正・削除・利用停止をご希望の場合は、上記の連絡先までご連絡ください。ご本人であることを確認のうえ、法令に従って対応します。</p>
+
+    <h2><span class="n">09</span> EU/EEA 等からのアクセスについて</h2>
+    <p>
+      EU/EEA・英国などからアクセスされる方について、当サイトは GDPR 等の適用法令が求める範囲で、
+      ご自身のデータへのアクセス・訂正・削除・処理の制限などを求める権利を尊重します。権利の行使は上記の連絡先で受け付けます。
+    </p>
+
+    <h2><span class="n">10</span> 本ポリシーの改定</h2>
+    <p>本ポリシーの内容は、必要に応じて変更することがあります。重要な変更を行う場合は、本ページ上で告知します。</p>
+  </main>
+
+  <footer>
+    <div class="foot">
+      <span class="mk" aria-hidden="true"><svg viewBox="48 28 156 172"><path d="M 150 126 C 150 98, 136 76, 114 72 C 115 62, 117 51, 118 47 C 119 52, 111 63, 103 70 C 96 63, 89 52, 89 47 C 89 51, 87 62, 86 74 C 68 82, 66 104, 82 116 C 96 126, 120 122, 124 104 C 128 86, 90 94, 84 132 C 76 162, 98 184, 124 178 C 148 172, 150 148, 138 136 C 152 150, 176 156, 190 138" fill="none" stroke="currentColor" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      <span class="made">made with nyampersand</span>
+      <span class="sp"></span>
+      <a class="lnk" href="/">ホーム</a>
+      <a class="lnk" href="#" id="cookie-settings">Cookie設定</a>
+      <a class="mail" href="#" data-u="hello" data-d="nyampersand.com" data-show aria-label="メールで連絡">hello（アット）nyampersand.com</a>
+      <span class="cc">© 2026</span>
+    </div>
+  </footer>
+
+</div>
+
+<div id="consent-banner" class="consent" role="region" aria-label="Cookie の同意" hidden>
+  <div class="inner">
+    <p>このサイトは利用状況の把握のため Cookie（Google Analytics）を使用します。詳しくは <a href="/privacy.html">プライバシーポリシー</a>。</p>
+    <div class="btns">
+      <button type="button" class="deny">拒否する</button>
+      <button type="button" class="accept">同意する</button>
+    </div>
+  </div>
+</div>
+
+<script>
+  (function(){
+    // email: assembled at runtime so the raw address / mailto: never sits in the HTML source (spam harvesters)
+    var mails = document.querySelectorAll('a[data-u][data-d]');
+    for(var i=0;i<mails.length;i++){
+      var a = mails[i];
+      var addr = a.getAttribute('data-u') + '@' + a.getAttribute('data-d');
+      var subj = a.getAttribute('data-s');
+      a.href = 'mailto:' + addr + (subj ? '?subject=' + encodeURIComponent(subj) : '');
+      if(a.hasAttribute('data-show')) a.textContent = addr;
+    }
+  })();
+</script>
+
+<script>
+  (function(){
+    var KEY='nya-consent', GA='G-B03C33ZNLZ', banner=document.getElementById('consent-banner');
+    function loadGA(){
+      if(window.__gaLoaded) return; window.__gaLoaded=true;
+      var s=document.createElement('script');
+      s.async=true; s.src='https://www.googletagmanager.com/gtag/js?id='+GA;
+      document.head.appendChild(s);
+      window.dataLayer=window.dataLayer||[];
+      window.gtag=function(){dataLayer.push(arguments);};
+      gtag('js', new Date()); gtag('config', GA);
+    }
+    function clearGA(){
+      document.cookie.split(';').forEach(function(c){
+        var n=c.split('=')[0].trim();
+        if(n.indexOf('_ga')===0 || n==='_gid'){
+          document.cookie=n+'=; Max-Age=0; path=/';
+          document.cookie=n+'=; Max-Age=0; path=/; domain=.'+location.hostname;
+        }
+      });
+    }
+    function show(){ if(banner) banner.hidden=false; }
+    function hide(){ if(banner) banner.hidden=true; }
+    var choice=null; try{ choice=localStorage.getItem(KEY); }catch(e){}
+    if(choice==='granted') loadGA();
+    else if(choice!=='denied') show();
+    if(banner){
+      banner.querySelector('.accept').addEventListener('click', function(){ try{localStorage.setItem(KEY,'granted');}catch(e){} loadGA(); hide(); });
+      banner.querySelector('.deny').addEventListener('click', function(){ try{localStorage.setItem(KEY,'denied');}catch(e){} clearGA(); hide(); });
+    }
+    var link=document.getElementById('cookie-settings');
+    if(link) link.addEventListener('click', function(e){ e.preventDefault(); show(); });
+  })();
+</script>
+</body>
+</html>
